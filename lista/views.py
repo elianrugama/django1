@@ -17,6 +17,8 @@ def registrar(request):
 	fechaa = time.strftime("%d/%m/20%y %I:%M")
 	nombree = request.POST["nombrex"]
 	descripcione = request.POST["descripcionx"]
+	print(nombree)
+	print(descripcione)
 	if nombree=="":
 		return redirect("home")
 
